@@ -1,10 +1,20 @@
+import { BrowserRouter,Link,Switch, Route } from 'react-router-dom'
+import { Router } from './router/Router';
 import "./styles.css";
 
 export default function App() {
   return (
+    <BrowserRouter>
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+      <Link to="/">Home</Link>
+      <br />
+      <Link to="/page1">Page1</Link>
+      <br />
+      <Link to="/page2">Page2</Link>
+      <br />
     </div>
+    <Router />
+    </BrowserRouter>
+
   );
 }
